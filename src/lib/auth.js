@@ -1,7 +1,7 @@
 export const AUTH_STORAGE_KEY = 'sbta_auth'
 
 export const getStoredAuth = () => {
-  const storedValue = localStorage.getItem(AUTH_STORAGE_KEY)
+  const storedValue = sessionStorage.getItem(AUTH_STORAGE_KEY)
 
   if (!storedValue) {
     return null
@@ -10,15 +10,15 @@ export const getStoredAuth = () => {
   try {
     return JSON.parse(storedValue)
   } catch {
-    localStorage.removeItem(AUTH_STORAGE_KEY)
+    sessionStorage.removeItem(AUTH_STORAGE_KEY)
     return null
   }
 }
 
 export const storeAuth = (authData) => {
-  localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(authData))
+  sessionStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(authData))
 }
 
 export const clearAuth = () => {
-  localStorage.removeItem(AUTH_STORAGE_KEY)
+  sessionStorage.removeItem(AUTH_STORAGE_KEY)
 }

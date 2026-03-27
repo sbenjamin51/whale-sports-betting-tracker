@@ -46,10 +46,15 @@ const Login = () => {
 
   return (
     <main className="login-page">
-      <section className="login-card">
+        <section className="login-hero">
+            <h1>Whale Bets</h1>
+            <h2>Track every bet with confidence.</h2>
+            <p>Monitor your bankroll, analyze trends, and keep your betting history organized.</p>
+        </section>
+        <section className="login-card">
         <div className="login-card__copy">
           <span className="login-card__eyebrow">Welcome back</span>
-          <h1 className="login-card__title">Log in to Whale Bets</h1>
+          <h1 className="login-card__title">Log in</h1>
           <p className="login-card__subtitle">
             Enter your email and password to access your bets, bankroll, and performance
             dashboard.
