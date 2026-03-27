@@ -1,0 +1,122 @@
+.signup-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top right, rgba(255, 194, 77, 0.24), transparent 28%),
+    linear-gradient(135deg, #0b1f44 0%, #0b7a6e 100%);
+}
+
+.signup-card {
+  width: min(100%, 500px);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 24px 70px rgba(9, 24, 44, 0.28);
+  box-sizing: border-box;
+}
+
+.signup-card__copy {
+  text-align: left;
+}
+
+.signup-card__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0b7a6e;
+}
+
+.signup-card__title {
+  margin: 0.9rem 0 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  text-align: left;
+  color: #10233a;
+}
+
+.signup-card__subtitle {
+  margin-top: 1rem;
+  color: #506274;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.signup-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.signup-form__field {
+  display: grid;
+  gap: 0.45rem;
+  text-align: left;
+  color: #21364f;
+  font-weight: 600;
+}
+
+.signup-form__input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(19, 34, 56, 0.16);
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #10233a;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.signup-form__input:focus {
+  outline: 2px solid rgba(11, 122, 110, 0.2);
+  border-color: #0b7a6e;
+}
+
+.signup-form__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.95rem 1.2rem;
+  background: #ffc24d;
+  color: #10233a;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.signup-form__button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.signup-form__message {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.signup-card__footer {
+  margin-top: 1.5rem;
+  color: #5c6f84;
+  text-align: center;
+}
+
+.signup-card__footer a {
+  color: #0b7a6e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .signup-card {
+    padding: 1.4rem;
+    border-radius: 24px;
+  }
+}
