@@ -1,4 +1,5 @@
 import Home from '../Home/Home'
+import './Analytics.css'
 
 const AnalyticsPage = () => {
   return (

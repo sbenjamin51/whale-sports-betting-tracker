@@ -1,6 +1,6 @@
 import Home from '../Home/Home'
 
-const BetsPage = () => {
+const Bets = () => {
   return (
     <Home
       title="My Bets"
@@ -11,4 +11,4 @@ const BetsPage = () => {
   )
 }
 
-export default BetsPage
+export default Bets

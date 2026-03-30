@@ -47,6 +47,11 @@ const Signup = () => {
 
   return (
     <main className="signup-page">
+      <section className="signup-hero">
+            <h1>Whale Bets</h1>
+            <h2>Track every bet with confidence.</h2>
+            <p>Monitor your bankroll, analyze trends, and keep your betting history organized.</p>
+        </section>
       <section className="signup-card">
         <div className="signup-card__copy">
           <span className="signup-card__eyebrow">Get started</span>

@@ -1,4 +1,5 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { clearAuth } from '../../lib/auth'
 import './Navbar.css'
 
 const navLinks = [
@@ -9,6 +10,13 @@ const navLinks = [
 ]
 
 const Navbar = () => {
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    clearAuth()
+    navigate('/')
+  }
+
   return (
     <header className="navbar">
       <div className="navbar__brand">
@@ -38,6 +46,9 @@ const Navbar = () => {
         <NavLink className="navbar__button navbar__button--primary" to="/bets">
           Add Bet
         </NavLink>
+        <button className="navbar__button navbar__button--logout" type="button" onClick={handleLogout}>
+          Log Out
+        </button>
       </div>
     </header>
   )
